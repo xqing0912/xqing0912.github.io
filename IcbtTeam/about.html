@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <!-- 樣版css -->
+    <link rel="stylesheet" href="template.css">
+
+    <style>
+        /* 自訂樣式 */
+        body {
+            /* height: 600vh; */
+
+
+        }
+
+        .right_content {
+            background-color: transparent;
+            background-color: #3C586E;
+        }
+
+        .about {
+            padding: 122px 0;
+        }
+
+        .about h1 {
+            margin: 0;
+            font-size: 60px;
+        }
+
+        .about h6 {
+            margin: 0;
+            font-size: 26px;
+            padding: 60px 0 30px 0;
+        }
+
+        .about p {
+            margin: 0;
+
+        }
+
+        .about .margin_bottom_p {
+
+            margin-bottom: 23px;
+        }
+
+        .timeline {
+            /* padding-bottom:20px; */
+        }
+
+
+
+        .box .drinkimg {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+
+        .drinkimg.active {
+            display: block;
+        }
+
+        .drinkimg.none {
+            display: none;
+        }
+
+        .years {
+            /* font-size: 26px */
+            /* position: absolute; */
+            /* 未展開 */
+            /* right: 0; */
+            /* 展開 */
+            /* right: -255px; */
+            /* top: 0;
+            z-index: 99; */
+
+        }
+
+        .year1 {
+            /* 1994 */
+            width: 320px;
+            position: absolute;
+            right: -295px;
+            top: 220px;
+        }
+
+        .year2 {
+            /* 1997 */
+            width: 208px;
+        }
+
+        .year3 {
+            /* 2000 */
+            width: 257px;
+        }
+
+        .year4 {
+            /* 2002 */
+            width: 329px;
+        }
+
+        .year5 {
+            /* 2003 */
+            width: 368px;
+        }
+
+        .year6 {
+            /* 2005 */
+            width: 262px;
+        }
+
+        .year7 {
+            /* 2006 */
+            width: 229px;
+        }
+
+        .year8 {
+            /* 2012 */
+            width: 293px;
+        }
+
+        .year9 {
+            /* 2016 */
+            width: 290px;
+        }
+
+        .year10 {
+            /* 2017 */
+            width: 304px;
+        }
+
+
+        .line_content .line {
+            width: 100%;
+            border: 1px solid white;
+            margin: 0;
+        }
+
+        .line_content .circle {
+            width: 24px;
+            height: 24px;
+            background-color: white;
+            border-radius: 50%;
+            margin-top: -12px;
+        }
+
+        .lineT {
+            width: 100%;
+            font-size: 26px;
+        }
+
+        .lineB {
+            width: 100%;
+            font-size: 18px;
+        }
+
+        /* nav {
+            position: sticky;
+            top: 0;
+        } */
+
+        /* 0.511 */
+        .drinking {
+
+            position: relative;
+            z-index: 1;
+            background: url(./img/about/cup3.png) 0 0 no-repeat;
+            width: 436px;
+            height: 882px;
+            margin: 0 auto;
+            background-position-y: -8819px;
+
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- <div class="box" style="background-color: red;">
+        <img src="./img/leaves.svg" alt="">
+    </div> -->
+
+    <div class="left_navbar ">
+        <a href="index.html">
+            <div class="logo">
+                <img src="./img/logo.png">
+            </div>
+        </a>
+        <div class="navitems">
+            <ul>
+                <div class="item">
+                    <a href="about.html">
+                        <div class="nav_icon"></div>
+                        <li>關於五十嵐</li>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="featured.html">
+                        <div class="nav_icon"></div>
+                        <li>五十嵐嚴選</li>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="news.html">
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">最新消息</li>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="top.html">
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">精選飲品</li>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="store_location.html">
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">門市據點</li>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="contact.html">
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">聯絡我們</li>
+                    </a>
+                </div>
+
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="menu_icon"><a href="Menu.html"><img src="./img/menu/menu-icon.png" alt=""></a></div>
+
+    <section class="right_content">
+        <div class="about text-center">
+            <h1>關於50嵐</h1>
+            <h6>連鎖體系</h6>
+            <p class="margin_bottom_p">50嵐綠茶連鎖體系於1994年由創辦人馬先生自台南成立</p>
+            <p>進而自高雄區、中區(含雲、嘉)、台北區、桃竹苗區陸續拓點。</p>
+            <h6>採取全國分區經營模式</h6>
+            <p class="margin_bottom_p">因各地區之營運成本(例租金、人事等)與風俗民情不同，</p>
+            <p class="margin_bottom_p">故有不同之商品定價與經營方式，此乃與其他品牌不同之處。</p>
+            <p class="margin_bottom_p">50嵐綠茶連鎖體系截至2012年12月底全國總店數超越五百間門市，</p>
+            <p>目前仍在陸續佈局中。</p>
+        </div>
+
+        <div class="timeline ">
+            <div class="drinking">
+                <div class="years">
+                    <div class="year1">
+                        <p class="lineT text-center">1994</p>
+                        <div class="line_content  d-flex">
+                            <hr class="line">
+                            <div class="circle"></div>
+                        </div>
+                        <p class="lineB text-center">台南路邊小攤販起家</p>
+                    </div>
+
+                    <div class="year2">
+                        <p class="lineT text-center">1997</p>
+                        <div class="line_content ">
+                            <div class="circle"></div>
+                            <hr class="line margin: -12px;">
+                            <!-- <div class="circle"></div> -->
+                        </div>
+                        <p class="lineB text-center">成立新孝創始店</p>
+                    </div>
+<!-- 
+                    <div class="year3">
+                        <p class="lineT text-center">2000</p>
+                        <div class="line_content d-flex">
+                            <hr class="line">
+                            <div class="circle"></div>
+                        </div>
+                        <p class="lineB text-center">成立高雄總店</p>
+                    </div>
+
+                    <div class="year4">
+                        <p class="lineT text-center">2002</p>
+                        <div class="line_content d-flex">
+                            <hr class="line">
+                            <div class="circle"></div>
+                        </div>
+                        <p class="lineB text-center">成立台中健行總店</p>
+                    </div>
+
+                    <div class="year5">
+                        <p class="lineT text-center">2003</p>
+                        <div class="line_content d-flex">
+                            <hr class="line">
+                            <div class="circle"></div>
+                        </div>
+                        <p class="lineB text-center">成立深耕茶業有限公司</p>
+                    </div>
+
+                    <div class="year6">
+                        <p class="lineT text-center">2005</p>
+                        <div class="line_content d-flex">
+                            <hr class="line">
+                            <div class="circle"></div>
+                        </div>
+                        <p class="lineB text-center">創立春嵐有限公司
+                            並在桃竹分別設立總店</p>
+                    </div>
+
+                    <div class="year7">
+                        <p class="lineT text-center">2006</p>
+                        <div class="line_content d-flex">
+                            <hr class="line">
+                            <div class="circle"></div>
+                        </div>
+                        <p class="lineB text-center">創立雅嵐有限公司</p>
+                    </div>
+
+                    <div class="year8">
+                        <p class="lineT text-center">2012</p>
+                        <div class="line_content d-flex">
+                            <hr class="line">
+                            <div class="circle"></div>
+                        </div>
+                        <p class="lineB text-center">全省總店數超過五百間門市</p>
+                    </div>
+
+                    <div class="year9">
+                        <p class="lineT text-center">2016</p>
+                        <div class="line_content d-flex">
+                            <hr class="line">
+                            <div class="circle"></div>
+                        </div>
+                        <p class="lineB text-center">春嵐併入雅嵐有限公司</p>
+                    </div>
+
+                    <div class="year10">
+                        <p class="lineT text-center">2017</p>
+                        <div class="line_content d-flex">
+                            <hr class="line">
+                            <div class="circle"></div>
+                        </div>
+                        <p class="lineB text-center">榮登全國熱搜飲料排行榜第一</p>
+                    </div> -->
+                    <!-- <img class="year year1994" src="./img/about/t1.png" style="width:500px" alt="">
+                <img class="year year1997" src="./img/about/t2.png" style="width:500px"  alt="">   -->
+                    <!-- <img class="year year2000" src="./img/about/t3.png"  alt="">
+                <img class="year year2002" src="./img/about/t4.png"  alt="">
+                <img class="year year2003" src="./img/about/t5.png"  alt="">
+                <img class="year year2005" src="./img/about/t6.png"  alt="">
+                <img class="year year2006" src="./img/about/t7.png"  alt="">
+                <img class="year year2012" src="./img/about/t8.png"  alt="">
+                <img class="year year2016" src="./img/about/t9.png"  alt="">
+                <img class="year year2017" src="./img/about/t10.png"  alt=""> -->
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <footer class="show">
+        © 2020 五十嵐 DESIGN BY ICBT
+    </footer>
+
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!-- GSAP - GreenSock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <!-- 樣版js -->
+    <script src="template.js"></script>
+
+    <script>
+        // 程式碼
+        var isStop = false;
+
+        // 預設不顯示footer
+        if (isStop) {
+            $("footer").show();
+        } else {
+            $("footer").hide();
+        }
+
+        //預設滑鼠滾輪次數
+        var imgIndex = 1;
+
+
+        $(window).scroll(function () {
+            console.log($(window).scrollTop());
+            if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+                $(window).on('wheel', function (e) {
+
+                    var delta = e.originalEvent.deltaY;
+                    if (delta > 0) {
+                        console.log("down");
+                        var bgPos = $('.drinking').css('background-position-y');
+                        var posValue = parseInt(bgPos.substring(0, bgPos.length - 2)) + 882;
+                        if (posValue > 882) {
+                            // 直到飲料喝完才顯示footer
+                            isStop = true;
+                            //取得目前未有footer的高度
+                            var oriTop = $(window).scrollTop();
+                            //延遲1s，顯示footer，主要是讓user 滾動滑鼠時，不要一次到底，停留在喝完飲料的畫面
+                            setTimeout(function () {
+                                $("footer").show();
+                            }, 1000)
+                            //1s後，footer出現，要讓footer在螢幕可視範圍的下方
+                            $(window).scrollTop(oriTop)
+
+                        } else {
+                            // 飲料未喝完繼續喝飲料
+                            $('.drinking').css('background-position-y', posValue + 'px');
+                            // TweenLite.to( $('t' + imgIndex), 1, {css:{'right':-280, display:'block'} ,ease:Power2.easeOut});
+                        }
+                    }
+                    else {// going up
+                        console.log("up");
+                    }
+                });
+
+                // document.querySelector("body").onwheel = function () {
+                //     var bgPos = $('.drinking').css('background-position-y');
+                //     var posValue = parseInt(bgPos.substring(0, bgPos.length - 2)) + 539;
+                //     if (posValue > 0) {
+                //         // 直到飲料喝完才顯示footer
+                //         isStop = true;
+                //         //取得目前未有footer的高度
+                //         var oriTop = $(window).scrollTop();
+                //         //延遲1s，顯示footer，主要是讓user 滾動滑鼠時，不要一次到底，停留在喝完飲料的畫面
+                //         setTimeout(function () {
+                //             $("footer").show();
+                //         }, 1000)
+                //         //1s後，footer出現，要讓footer在螢幕可視範圍的下方
+                //         $(window).scrollTop(oriTop)
+
+                //     } else {
+                //         // 飲料未喝完繼續喝飲料
+                //         $('.drinking').css('background-position-y', posValue + 'px');
+                //     }
+
+
+                // };
+            }
+
+        });
+
+
+        // document.addEventListener('scroll', function (x) {
+        //     console.log(window.scrollY)
+
+
+        //     if (scrollY > 400) {
+        //         var pos = 4;
+        //         var posnext = pos + 1;
+        //         var img1 = document.querySelector(".drinking .dringimg:nth-child(" + pos + ")");
+        //         $(img1).removeClass("active");
+        //         $(img1).addClass("none");
+
+        //         var imgnext = document.querySelector(".drinking .dringimg:nth-child(" + posnext + ")");
+        //         $(imgnext).removeClass("none");
+        //         $(imgnext).addClass("active");
+        //         TweenLite.to($('.year2003'), 1, { css: { 'right': -280, display: 'block' }, ease: Power2.easeOut });
+        //     }
+        //     else if (scrollY > 350) {
+        //         var pos = 3;
+        //         var posnext = pos + 1;
+        //         var img1 = document.querySelector(".drinking .dringimg:nth-child(" + pos + ")");
+        //         $(img1).removeClass("active");
+        //         $(img1).addClass("none");
+
+        //         var imgnext = document.querySelector(".drinking .dringimg:nth-child(" + posnext + ")");
+        //         $(imgnext).removeClass("none");
+        //         $(imgnext).addClass("active");
+        //         TweenLite.to($('.year2002'), 1, { css: { 'left': -255, display: 'block' }, ease: Power2.easeOut });
+        //     }
+        //     else if (scrollY > 300) {
+        //         var pos = 2;
+        //         var posnext = pos + 1;
+        //         var img1 = document.querySelector(".drinking .dringimg:nth-child(" + pos + ")");
+        //         $(img1).removeClass("active");
+        //         $(img1).addClass("none");
+
+        //         var imgnext = document.querySelector(".drinking .dringimg:nth-child(" + posnext + ")");
+        //         $(imgnext).removeClass("none");
+        //         $(imgnext).addClass("active");
+        //         TweenLite.to($('.year2000'), 1, { css: { 'right': -200, display: 'block' }, ease: Power2.easeOut });
+        //     }
+        //     else if (scrollY > 250) {
+        //         var pos = 1;
+        //         var posnext = pos + 1;
+        //         var img1 = document.querySelector(".drinking .dringimg:nth-child(" + pos + ")");
+        //         console.log(img1);
+        //         $(img1).removeClass("active");
+        //         $(img1).addClass("none");
+
+        //         var imgnext = document.querySelector(".drinking .dringimg:nth-child(" + posnext + ")");
+        //         $(imgnext).removeClass("none");
+        //         $(imgnext).addClass("active");
+        //         TweenLite.to($('.year1997'), 1, { css: { 'left': -165, display: 'block' }, ease: Power2.easeOut });
+        //     }
+        //     else if (scrollY > 200) {
+
+        //         TweenLite.to($('.year1994'), 1, { css: { 'right': -255, display: 'block' }, ease: Power2.easeOut });
+        //     }
+
+        // }, false)
+    </script>
+
+</body>
+
+</html>
