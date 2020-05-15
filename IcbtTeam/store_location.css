@@ -1,0 +1,290 @@
+@charset "UTF-8";
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: scale(0, 0) translateY(0);
+            transform: scale(0, 0) translateY(0);
+    opacity: 0;
+  }
+  70% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: scale(1, 1) translateY(600%);
+            transform: scale(1, 1) translateY(600%);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(600%);
+            transform: scale(1, 1) translateY(600%);
+  }
+}
+@keyframes slide {
+  0% {
+    -webkit-transform: scale(0, 0) translateY(0);
+            transform: scale(0, 0) translateY(0);
+    opacity: 0;
+  }
+  70% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: scale(1, 1) translateY(600%);
+            transform: scale(1, 1) translateY(600%);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(600%);
+            transform: scale(1, 1) translateY(600%);
+  }
+}
+
+.right_content {
+  height: 100vh;
+  background-color: #f7b9a4;
+  font-family: "Noto Sans TC";
+  color: #3b465d;
+  letter-spacing: 1px;
+}
+
+.right_content .store_out {
+  height: 100%;
+}
+
+.right_content .store_out .container-fluid {
+  height: 100%;
+}
+
+.right_content .store_out .row {
+  height: 100%;
+}
+
+@media all and (max-width: 768px) {
+  .right_content .store_out .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.right_content .store_out .left_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media all and (max-width: 768px) {
+  .right_content .store_out .left_box {
+    display: none;
+  }
+}
+
+.right_content .store_out .mapBox {
+  position: relative;
+}
+
+.right_content .store_out .mapBox .map_border {
+  width: 395px;
+}
+
+.right_content .store_out .mapBox .img_top {
+  position: absolute;
+  width: 220px;
+  top: 0px;
+  left: 175px;
+  opacity: 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.right_content .store_out .mapBox .img_top.active {
+  opacity: 1;
+  pointer-events: default;
+}
+
+.right_content .store_out .mapBox .img_top.click_active {
+  opacity: 1;
+  pointer-events: default;
+}
+
+.right_content .store_out .mapBox .img_center {
+  position: absolute;
+  width: 266px;
+  top: 117px;
+  left: 20px;
+  opacity: 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.right_content .store_out .mapBox .img_center.active {
+  opacity: 1;
+  pointer-events: default;
+}
+
+.right_content .store_out .mapBox .img_center.click_active {
+  opacity: 1;
+  pointer-events: default;
+}
+
+.right_content .store_out .mapBox .img_south {
+  position: absolute;
+  width: 205px;
+  top: 368px;
+  left: 0px;
+  opacity: 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.right_content .store_out .mapBox .img_south.active {
+  opacity: 1;
+  pointer-events: default;
+}
+
+.right_content .store_out .mapBox .img_south.click_active {
+  opacity: 1;
+  pointer-events: default;
+}
+
+.right_content .store_out .mapBox .img_east {
+  position: absolute;
+  width: 204px;
+  top: 205px;
+  left: 147px;
+  opacity: 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.right_content .store_out .mapBox .img_east.active {
+  opacity: 1;
+  pointer-events: default;
+}
+
+.right_content .store_out .mapBox .img_east.click_active {
+  opacity: 1;
+  pointer-events: default;
+}
+
+.right_content .store_out .right_box {
+  padding-top: 12vh;
+}
+
+@media all and (max-width: 1024px) {
+  .right_content .store_out .right_box {
+    padding-top: 20vh;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .right_content .store_out .right_box {
+    padding-top: 2vh;
+    padding-right: 15px;
+  }
+}
+
+.right_content .store_out .shopBox .slide.active {
+  -webkit-animation-name: slide;
+          animation-name: slide;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.right_content .store_out .shopBox .slide:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.right_content .store_out .shopBox .slide:nth-child(3) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.right_content .store_out .shopBox .slide:nth-child(4) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.right_content .store_out .shopBox .slide:nth-child(5) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.right_content .store_out .shopBox .slide:nth-child(6) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.right_content .store_out .shopBox .slide:nth-child(7) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.right_content .store_out .shopBox .slide:nth-child(8) {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+.right_content .store_out .shopBox .slide:nth-child(9) {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.right_content .store_out .shopBox .shop {
+  padding: 30px 10px 50px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #3b465d;
+}
+
+@media all and (max-width: 1024px) {
+  .right_content .store_out .shopBox .shop {
+    padding: 30px 10px 50px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #3b465d;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .right_content .store_out .shopBox .shop {
+    padding: 10px 5px 0 5px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #3b465d;
+  }
+}
+
+.right_content .store_out .shopBox .shop h4 {
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.right_content .store_out .shopBox .shop p {
+  font-family: "微軟正黑體";
+  font-size: 20px;
+}
+
+.right_content .store_out .shopBox .col-6:nth-last-child(-n+3) .shop {
+  border-bottom: none;
+}
+/*# sourceMappingURL=store_location.css.map */
