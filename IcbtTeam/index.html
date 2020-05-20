@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>五十嵐</title>
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- swiper css -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <!-- 樣版css -->
-    <!-- <link rel="stylesheet" href="template.css"> -->
+    <link rel="stylesheet" href="template.css">
     <style>
         .index_left_navbar {
             width: 175px;
@@ -27,8 +27,17 @@
             opacity: 0;
             z-index: 98;
 
-            animation: navbar_slider 1s 23s 1;
-            animation-fill-mode: forwards;
+            /* animation: navbar_slider 1s 23s 1;
+            animation-fill-mode: forwards; */
+
+            -webkit-animation: navbar_slider 1s 23s 1 forwards;
+            /* Safari 4+ */
+            -moz-animation: navbar_slider 1s 23s 1 forwards;
+            /* Fx 5+ */
+            -o-animation: navbar_slider 1s 23s 1 forwards;
+            /* Opera 12+ */
+            animation: navbar_slider 1s 23s 1 forwards;
+            /* IE 10+, Fx 29+ */
 
             display: flex;
             justify-content: center;
@@ -74,8 +83,19 @@
             /* left: 35px; */
             opacity: 0;
             z-index: 99;
-            animation: logoshow 1s 23s 1;
-            animation-fill-mode: forwards;
+            /* animation: logoshow 1s 23s 1;
+            animation-fill-mode: forwards; */
+
+
+            -webkit-animation: logoshow 1s 23s 1 forwards;
+            /* Safari 4+ */
+            -moz-animation: logoshow 1s 23s 1 forwards;
+            /* Fx 5+ */
+            -o-animation: logoshow 1s 23s 1 forwards;
+            /* Opera 12+ */
+            animation: logoshow 1s 23s 1 forwards;
+            /* IE 10+, Fx 29+ */
+
             transition: 1s;
         }
 
@@ -104,7 +124,7 @@
             /* 未展開效果 */
             /* opacity: 0; */
             color: white;
-            font-family: "Noto Sans TC";
+            font-family: 'Noto Sans TC', sans-serif;
         }
 
         .index_left_navbar .item {
@@ -166,7 +186,8 @@
         /* banner */
         #banner_section {
             width: 100%;
-            height: 100vh
+            /* height: 100vh; */
+            overflow: hidden;
         }
 
         #banner_section .bgfirst {
@@ -177,8 +198,17 @@
             position: absolute;
             top: 0;
             left: 0;
-            animation: animeBlack 3s 0s 1;
-            animation-fill-mode: forwards;
+            /* animation: animeBlack 3s 0s 1;
+            animation-fill-mode: forwards; */
+
+            -webkit-animation: animeBlack 3s 0s 1 forwards;
+            /* Safari 4+ */
+            -moz-animation: animeBlack 3s 0s 1 forwards;
+            /* Fx 5+ */
+            -o-animation: animeBlack 3s 0s 1 forwards;
+            /* Opera 12+ */
+            animation: animeBlack 3s 0s 1 forwards;
+            /* IE 10+, Fx 29+ */
         }
 
         /*  */
@@ -266,8 +296,17 @@
             position: absolute;
             left: 0;
             top: 0;
-            animation: anime 27s 0s 1;
-            animation-fill-mode: forwards;
+            /* animation: anime 27s 0s 1;
+            animation-fill-mode: forwards; */
+
+            -webkit-animation: anime 27s 0s 1 forwards;
+            /* Safari 4+ */
+            -moz-animation: anime 27s 0s 1 forwards;
+            /* Fx 5+ */
+            -o-animation: anime 27s 0s 1 forwards;
+            /* Opera 12+ */
+            animation: anime 27s 0s 1 forwards;
+            /* IE 10+, Fx 29+ */
         }
 
         @keyframes anime {
@@ -301,7 +340,7 @@
             position: absolute;
             top: 0;
             left: 0;
-
+            overflow: hidden;
         }
 
 
@@ -316,9 +355,18 @@
             position: absolute;
             left: 0;
             top: 0;
-            animation: animelast 34s 20s 1;
-            /*28*/
-            animation-fill-mode: forwards;
+
+            /* animation: animelast 34s 20s 1;
+            animation-fill-mode: forwards; */
+
+            -webkit-animation: animelast 34s 20s 1 forwards;
+            /* Safari 4+ */
+            -moz-animation: animelast 34s 20s 1 forwards;
+            /* Fx 5+ */
+            -o-animation: animelast 34s 20s 1 forwards;
+            /* Opera 12+ */
+            animation: animelast 34s 20s 1 forwards;
+            /* IE 10+, Fx 29+ */
         }
 
 
@@ -385,8 +433,19 @@
             top: 50%;
             transform: translate(-50%, -50%);
             z-index: 99;
-            animation: logohidden 9s 0s 1;
-            animation-fill-mode: forwards;
+            /* animation: logohidden 9s 0s 1;
+            animation-fill-mode: forwards; */
+
+            -webkit-animation: logohidden 9s 0s 1 forwards;
+            /* Safari 4+ */
+            -moz-animation: logohidden 9s 0s 1 forwards;
+            /* Fx 5+ */
+            -o-animation: logohidden 9s 0s 1 forwards;
+            /* Opera 12+ */
+            animation: logohidden 9s 0s 1 forwards;
+            /* IE 10+, Fx 29+ */
+
+            width: 400px;
         }
 
         /* 中間logo隱藏 */
@@ -404,14 +463,26 @@
             }
         }
 
+
         .enter {
             position: absolute;
             left: 50%;
             bottom: 25px;
             transform: translate(-50%, 0);
-            opacity: 0.65;
-            animation: shineEnter 5s 0s infinite;
+            opacity: 0;
+            animation: shineEnter 5s 7.3s infinite;
+
+            -webkit-animation: shineEnter 5s 7.3s infinite;
+            /* Safari 4+ */
+            -moz-animation: shineEnter 5s 7.3s infinite;
+            /* Fx 5+ */
+            -o-animation: shineEnter 5s 7.3s infinite;
+            /* Opera 12+ */
+            animation: shineEnter 5s 7.3s infinite;
+            /* IE 10+, Fx 29+ */
+
             cursor: pointer;
+
         }
 
         /* 中間logo隱藏 */
@@ -452,16 +523,68 @@
         }
 
         .icon_img {
-            animation: zoom 2s 1 ease-in-out;
+            animation: zoom 2s 9s ease-in-out;
             animation-iteration-count: infinite;
+
+            -webkit-animation: zoom 2s 9s infinite;
+            /* Safari 4+ */
+            -moz-animation: zoom 2s 9s infinite;
+            /* Fx 5+ */
+            -o-animation: zoom 2s 9s infinite;
+            /* Opera 12+ */
+            animation: zoom 2s 9s infinite;
+            /* IE 10+, Fx 29+ */
+
+            opacity: 0;
         }
 
         @keyframes zoom {
+            0% {
+                opacity: 1;
+            }
+
             50% {
                 transform: scale(1.2, 1.2);
             }
         }
+
+        @media(max-width: 768px) {
+            .centerlogo {
+                display: none;
+                width: 200px;
+            }
+
+            .enter {
+                display: none;
+            }
+
+            .index_left_navbar {
+                display: none;
+            }
+
+            .cornerlogo {
+                display: none;
+            }
+
+            .icon_img {
+                width: 50px;
+            }
+
+
+
+
+
+        }
     </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167190227-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-167190227-1');
+    </script>
 </head>
 
 <body>
@@ -494,7 +617,7 @@
                     </a>
                 </div>
                 <div class="item">
-                    <a href="store_location.html">
+                    <a href="store_location_mobile.html">
                         <div class="nav_icon"></div>
                         <li class="letterSpace">門市據點</li>
                     </a>
@@ -515,9 +638,78 @@
     <!-- 左上角logo -->
     <a href="index.html">
         <div class="cornerlogo">
-            <img src="./img/cornerLogo.png" style="width: 108px;" alt="">
+            <img src="./img/cornerLogo.svg" style="width: 108px;" alt="">
         </div>
     </a>
+
+
+    <!-- 手機版上方固定的navbar -->
+    <div class="mobile_navbar ">
+
+        <div class="logo"><a href="index.html"><img src="./img/cornerLogo.svg" width="47px"></a></div>
+
+        <a href="javascript:;" class="main">
+            <span class='hamburger'></span>
+            <span class='hamburger'></span>
+            <span class='hamburger'></span>
+        </a>
+
+
+    </div>
+
+    <!-- 手機版上方navbar滿版 -->
+    <div class="mobile_navbar_fully  ">
+        <a href="index.html">
+            <div class="logo d-flex justify-content-center">
+                <img src="./img/cornerLogo.svg" style="width:127px">
+
+            </div>
+
+        </a>
+        <div class="mobile_items">
+            <ul class="fontSize16">
+                <div class="item">
+                    <!-- <a href="about.html"> -->
+                    <div class="nav_icon"></div>
+                    <li>關於五十嵐</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="featured.html"> -->
+                    <div class="nav_icon"></div>
+                    <li>五十嵐嚴選</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="news.html"> -->
+                    <div class="nav_icon"></div>
+                    <li class="letterSpace">最新消息</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="top.html"> -->
+                    <div class="nav_icon"></div>
+                    <li class="letterSpace">精選飲品</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="store_location.html"> -->
+                    <div class="nav_icon"></div>
+                    <li class="letterSpace">門市據點</li>
+                    <!-- </a> -->
+                </div>
+
+                <div class="item">
+                    <!-- <a href="contact.html"> -->
+                    <div class="nav_icon"></div>
+                    <li class="letterSpace" style="padding-bottom: 0;">聯絡我們</li>
+                    <!-- </a> -->
+                </div>
+
+
+            </ul>
+        </div>
+    </div>
 
 
     <!-- banner -->
@@ -538,7 +730,7 @@
 
     <!-- 中間logo -->
     <div class="centerlogo">
-        <img src="./img/logo_white.svg" style="width:400px;" alt="">
+        <img src="./img/logo_white.svg" alt="">
     </div>
 
     <!-- enter icon -->
@@ -546,7 +738,7 @@
         <img src="./img/banner/enter.png" alt="">
     </div>
     <!-- menu icon -->
-<div class="menu_icon"><a  href="Menu.html"><img class="icon_img" src="./img/menu/menu-icon.png" alt=""></a></div>
+    <div class="menu_icon"><a href="Menu.html"><img class="icon_img" src="./img/menu/menu-icon.png" alt=""></a></div>
 
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"
@@ -586,17 +778,50 @@
 
         });
 
-        // //設定秒數關閉enter icon
-        // var timeoutID = setTimeout(closeEnter, 22000);
-        // function closeEnter() {
-        //     document.getElementsByClassName("enter").style.display = "none";
-        // }
+        // // 手機版navbar的每個項目hover會有一個icon
+        // var nav_items = document.querySelectorAll(".mobile_navbar_fully .mobile_items");
+        // nav_items.forEach(function (item, index) {
+        //     $(item).mouseout(function () {
+        //         var nav_icon = item.querySelector('.nav_icon');
+        //         console.log(nav_icon);
+        //         $(nav_icon).addClass("active");
+        //     });
+
+        // });
+
+
+        var t1 = new TimelineMax();
+        t1.fromTo($('.mobile_navbar'), 1, { css: { top: "-55.25px" } }, { css: { top: "0px" } }, 6.7)
 
         $(".enter").click(function () {
             $('.index_left_navbar').addClass("active");
             $('.cornerlogo').addClass("active");
             $(".enter").hide();
         });
+
+        function linkfunction(svalue) {
+            window.location.href = svalue;
+
+        }
+
+
+// $(document).on("click touchstart tap", ".mobile_navbar_fully .mobile_items .item:nth-child(1)", function (){
+//     window.location.href="./about.html"     
+// });
+
+        // // 手機版navbar的每個項目hover會有一個icon
+        // var arr_mobile_http = ['about.html', 'featured.html', 'news.html', 'top.html', 'store_location_mobile.html', 'contact.html']
+
+        // // 此处是 jQuery 事件...
+        // var nav_items = document.querySelectorAll(".mobile_navbar_fully .mobile_items .item");
+        // nav_items.forEach(function (item, index) {
+
+        //     $(item).on('click touchstart tap', function () {
+        //         window.location.href = arr_mobile_http[index];
+        //     });
+
+        // });
+
     </script>
 </body>
 

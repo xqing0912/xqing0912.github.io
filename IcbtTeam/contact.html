@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact_us</title>
-    <link href='https://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="template.css">
     <link rel="stylesheet" href="contact.css">
@@ -21,14 +21,15 @@
 </head>
 
 <body>
-    <div class="left_navbar ">
+    <div class="left_navbar  ">
         <a href="index.html">
             <div class="logo">
                 <img src="./img/logo.png">
             </div>
         </a>
+
         <div class="navitems">
-            <ul>
+            <ul style="margin-top: 50px; font-size:20px;">
                 <div class="item">
                     <a href="about.html">
                         <div class="nav_icon"></div>
@@ -71,51 +72,117 @@
             </ul>
         </div>
     </div>
-    <div class="mobile_navbar   ">
 
-        <div class="logo"><a href="index.html"><img src="./img/cornerLogo.png" width="110px"></a></div>
-    
-        <a href="mobile_menu.html">
-            <div class="hamburger">
-                <img src="./img/hamburger.svg" width="36px">
-            </div>
+    <!-- 手機版上方固定的navbar -->
+    <div class="mobile_navbar ">
+
+        <div class="logo"><a href="index.html"><img src="./img/cornerLogo.svg" width="47px"></a></div>
+
+        <a href="javascript:;" class="main">
+            <span class='hamburger'></span>
+            <span class='hamburger'></span>
+            <span class='hamburger'></span>
         </a>
-    
-    </div>
-        <!-- menu icon -->
-<div class="menu_icon"><a  href="Menu.html"><img class="icon_img" src="./img/menu/menu-icon.png" alt=""></a></div>
 
+
+    </div>
+      
+    <!-- 手機版上方navbar滿版 -->
+    <div class="mobile_navbar_fully  ">
+        <a href="index.html">
+            <div class="logo d-flex justify-content-center">
+                <img src="./img/cornerLogo.svg" style="width:127px">
+
+            </div>
+        
+        </a>
+        <div class="mobile_items">
+            <ul class="fontSize16">
+                <div class="item">
+                    <!-- <a href="about.html"> -->
+                        <div class="nav_icon"></div>
+                        <li>關於五十嵐</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="featured.html"> -->
+                        <div class="nav_icon"></div>
+                        <li>五十嵐嚴選</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="news.html"> -->
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">最新消息</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="top.html"> -->
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">精選飲品</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="store_location.html"> -->
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">門市據點</li>
+                    <!-- </a> -->
+                </div>
+
+                <div class="item">
+                    <!-- <a href="contact.html"> -->
+                        <div class="nav_icon" ></div>
+                        <li class="letterSpace" style="padding-bottom: 0;">聯絡我們</li>
+                    <!-- </a> -->
+                </div>
+
+
+            </ul>
+        </div>
+    </div> 
+
+
+
+
+       <!-- menu icon -->
+       <div class="menu_icon">
+        <img class="icon_img" src="./img/menu/menu-icon.png" alt="">
+    </div>
+    <!-- drink -->
+    <div class="drink">
+        <img src="./img/menu/menu-icon(DRINK).png" alt="">
+    </div>
+    
     <section class="right_content" style="background-image: url('./img/contact_img/Contact2.jpg');">
         <div class="container-fluid" data-aos="fade-left">
-            <div class="row">
-                <div class="col-12 col-md-6 left">
-                </div>
+            <div class="row justify-content-end">
                 <div class="col-12 col-md-6 display">
                     <div class="contact_box_out">
                         <div class="contact_box_in">
-                            <h1 class="contact_size">contact</h1>
+                            <h1 class="contact_size" data-aos="zoom-out-left" data-aos-delay="100">contact</h1>
                             <form class="mar_top">
-                                <div class="form-group">
+                                <div class="form-group" data-aos="zoom-out-left" data-aos-delay="300">
                                     <label for="exampleFormControlInput1"></label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1"
                                         placeholder="姓名">
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group" data-aos="zoom-out-left" data-aos-delay="500">
                                     <label for="exampleFormControlInput1"></label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="电话">
+                                        placeholder="電話">
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group" data-aos="zoom-out-left" data-aos-delay="700">
                                     <label for="exampleFormControlInput1"></label>
                                     <input type="email" class="form-control" id="exampleFormControlInput1"
                                         placeholder="信箱">
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group" data-aos="zoom-out-left" data-aos-delay="900">
                                     <label for="exampleFormControlTextarea1"></label>
                                     <textarea class="form-control textarea_border" id="exampleFormControlTextarea1"
-                                        rows="6" placeholder="意見內容"></textarea>
+                                        rows="6" placeholder="意見內容" data-aos="zoom-out-left"
+                                        data-aos-delay="1100"></textarea>
                                 </div>
-                                <div class="btn_box">
+                                <div class="btn_box" data-aos="zoom-out-left" data-aos-delay="1300">
                                     <button type="button" class="btn btn-outline-secondary button_top">SEND</button>
                                 </div>
                             </form>
@@ -124,8 +191,6 @@
                 </div>
             </div>
         </div>
-
-
     </section>
 
 
