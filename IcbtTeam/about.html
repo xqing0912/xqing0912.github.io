@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>關於50嵐</title>
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -15,7 +15,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- 樣版css -->
     <link rel="stylesheet" href="template.css">
-
+    <!-- 字形 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <style>
         /* 自訂樣式 */
         body {
@@ -45,10 +46,12 @@
             color: white;
             font-family: 'Noto Sans TC', sans-serif;
             position: relative;
+            overflow: hidden;
         }
 
         .about {
             padding: 122px 0;
+            overflow: hidden;
         }
 
         .about .titleimg {
@@ -59,25 +62,28 @@
 
         }
 
-        .about .imgbox1 {
+         .imgbox1 {
             position: absolute;
-            right: 0px;
+            /* right: 0px; */
             top: 26px;
+            right: 183px;
+            width: 400px;
+            /* overflow: hidden; */
             /* transform: rotate(15deg); */
             /* display: none; */
             /* max-width:700px; */
 
         }
 
-        .about .rightCornerImg,
-        .about .leftCenterImg,
-        .about .rightBottomImg {
+         .rightCornerImg,
+         .leftCenterImg,
+         .rightBottomImg {
             opacity: 0.7;
         }
 
 
 
-        .about .rightCornerImg {
+         .rightCornerImg {
             max-width: 700px;
 
         }
@@ -100,7 +106,7 @@
             line-height: 48px;
         }
 
-        .about .imgbox2 {
+         .imgbox2 {
             position: absolute;
             left: 100px;
             /* display: none; */
@@ -392,24 +398,24 @@
 
         }
 
-     
+
 
         .hidden {
             display: block;
         }
 
         @media(min-width: 1920px) {
-            .about .rightCornerImg {
+             .rightCornerImg {
 
                 width: 700px;
             }
 
-            .about .leftCenterImg {
+             .leftCenterImg {
 
                 width: 521px;
             }
 
-             .rightBottomImg {
+            .rightBottomImg {
                 width: 657px;
             }
 
@@ -417,12 +423,12 @@
         }
 
         @media (max-width: 1919px) {
-            .about .rightCornerImg {
+             .rightCornerImg {
 
                 width: 30vw;
             }
 
-            .about .leftCenterImg {
+         .leftCenterImg {
 
                 width: 30vw;
             }
@@ -440,16 +446,16 @@
 
         @media (max-width: 1500px) {
 
-            .about .imgbox1 {
+             .imgbox1 {
                 top: 120px;
             }
 
-            .about .rightCornerImg {
+             .rightCornerImg {
 
                 width: 25vw;
             }
 
-            .about .imgbox2 {
+             .imgbox2 {
                 left: 35px;
             }
 
@@ -476,18 +482,18 @@
                 overflow: hidden;
             }
 
-            .about .titlepart img {
+             .titlepart img {
                 width: 50px;
 
             }
 
-            .about .imgbox1 {
+             .imgbox1 {
                 display: none;
 
             }
 
 
-            .about .imgbox2 {
+             .imgbox2 {
                 display: none;
             }
 
@@ -569,7 +575,7 @@
                 /*未展開*/
                 left: 0px;
                 /*展開*/
-                /* left: -54px; */
+                /* left: -77px; */
                 top: 100px;
             }
 
@@ -614,7 +620,7 @@
                 /* 未展開 */
                 left: 8px;
                 /* 展開 */
-                /* left: -55px; */
+                /* left: -80px; */
                 top: 172px;
             }
 
@@ -625,7 +631,7 @@
                 /* 未展開 */
                 right: 15px;
                 /* 展開 */
-                /* right: -46px; */
+                /* right: -67px; */
                 top: 199px;
             }
 
@@ -636,7 +642,7 @@
                 /* 未展開 */
                 left: 8px;
                 /* 展開 */
-                /* left: -67px; */
+                /* left: -94px; */
                 top: 222px;
             }
 
@@ -647,7 +653,7 @@
                 /* 未展開 */
                 right: 18px;
                 /* 展開 */
-                /* right: -58px; */
+                /* right: -71px; */
                 top: 243px;
             }
 
@@ -658,7 +664,7 @@
                 /* 未展開 */
                 left: 20px;
                 /* 展開 */
-                /* left: -62px; */
+                /* left: -96px; */
                 top: 262px;
             }
 
@@ -689,7 +695,15 @@
 
         }
     </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167190227-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
+        gtag('config', 'UA-167190227-1');
+    </script>
 
 </head>
 
@@ -826,7 +840,7 @@
     </div>
     <!-- drink -->
     <div class="drink">
-        <img src="./img/menu/menu-icon(DRINK).png" alt="">
+        <img class="drinkimg" src="./img/menu/menu-icon(DRINK).png" alt="">
     </div>
 
     <section class="right_content">
@@ -835,22 +849,22 @@
                 <img src="./img/about/tea.png" class="rightBottomImg" alt="">
             </div>
         </div>
-
-        <div class="about text-center">
-            <div class="titlepart d-flex justify-content-center">
-                <img src="./img/about/cocoMilk.png" class="titleimg" data-aos="zoom-out-right" alt="">
-                <h1 class="titleColor">關於50嵐</h1>
-                <img src="./img/about/greenMilk.png" class="titleimg" data-aos="zoom-out-left" alt="">
-            </div>
-
             <div class="imgbox1" data-aos="fade-down">
                 <img src="./img/about/teaPowder2.png" class="rightCornerImg" alt="">
             </div>
+        <div class="about text-center">
+            <div class="titlepart d-flex justify-content-center">
+                <img src="./img/about/cocoMilk.png" class="titleimg" data-aos="zoom-out-right" alt="">
+                <h1 class="titleColor" data-aos="zoom-out-up">關於50嵐</h1>
+                <img src="./img/about/greenMilk.png" class="titleimg" data-aos="zoom-out-left" alt="">
+            </div>
 
-            <h6 class="subtitleColor">連鎖體系</h6>
+
+
+            <h6 class="subtitleColor" data-aos="zoom-out-up">連鎖體系</h6>
             <p class=" pColor ">50嵐綠茶連鎖體系於1994年由創辦人馬先生自台南成立<span class=""><span class="comma"><br
                             class="hidden">進而自高雄區、中區(含雲、嘉)、台北區、桃竹苗區陸續拓點。</p>
-            <h6 class="subtitleColor">採取全國分區經營模式</h6>
+            <h6 class="subtitleColor" data-aos="zoom-out-up">採取全國分區經營模式</h6>
             <p class="margin_bottom_p pColor">因各地區之營運成本(例租金、人事等)與風俗民情不同，<br
                     class="hidden">故有不同之商品定價與經營方式，此乃與其他品牌不同之處。<br class="hidden">50嵐綠茶連鎖體系截至2012年12月底全國總店數超越五百間門市，<br
                     class="hidden">
@@ -890,7 +904,7 @@
                         <img class="year year2017 t10" src="./img/about/t10.png" alt="">
                     </div>
                     <div class="mobile_years ">
-                        <img class="year year1994 t1" src="./img/about/mobile_t1.svg" alt="">
+                        <img class="year year1994 t1" src="./img/about/mobile_t1.png" alt="">
                         <img class="year year1997 t2" src="./img/about/mobile_t2.png" alt="">
                         <img class="year year2000 t3" src="./img/about/mobile_t3.png" alt="">
                         <img class="year year2002 t4" src="./img/about/mobile_t4.png" alt="">
@@ -979,7 +993,7 @@
         console.log("screen.width", screen.width);
 
         if (screen.width <= 768) {
-            arrRightPos = [-84, -54, -58, -84, -88, -55, -46, -67, -58, -62];
+            arrRightPos = [-84, -77, -58, -84, -88, -80, -67, -94, -71, -96];
             iheight = 299;
             // selectorName = 'mobile_t';
         }

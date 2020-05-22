@@ -92,6 +92,9 @@ $(".main").click(function () {
 
 		TweenLite.to($('.mobile_navbar_fully'), 1, { css: { 'left': '-100%', 'display': 'none' }, ease: Power2.easeOut });
 		TweenLite.to($('.mobile_navbar .logo'), 0.5, { css: { 'opacity': 1 }, delay: 1, ease: Power2.easeOut });
+
+		$('.mobile_navbar .logo').css('pointer-events', 'auto');
+
 		$("footer").show();
 		$(".menu_icon").show();
 		// $(".rim").show().delay( 5000 );
@@ -104,6 +107,7 @@ $(".main").click(function () {
 
 		TweenLite.to($('.mobile_navbar_fully'), 1, { css: { 'left': 0, 'display': 'block' }, ease: Power2.easeOut });
 		TweenLite.to($('.mobile_navbar .logo'), 0.5, { css: { 'opacity': 0 }, ease: Power2.easeOut });
+		$('.mobile_navbar .logo').css('pointer-events', 'none');
 		$("footer").hide();
 		$(".menu_icon").hide();
 		// $(".rim").hide();
