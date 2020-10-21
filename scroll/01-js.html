@@ -22,8 +22,8 @@
             position: fixed;
             top: 200px;
             left: 200px;
-            width:500px;
-            height:500px;
+            width: 500px;
+            height: 500px;
         }
 
         .box .drinkimg {
@@ -96,7 +96,7 @@
             display: none;
             position: absolute;
             /* 未展開 */
-            right:0;
+            right: 0;
             /* 展開 */
             /* right: -255px; */
             top: 0;
@@ -108,7 +108,7 @@
 
             position: absolute;
             /* 未展開 */
-            left:0;
+            left: 0;
             /* 展開 */
             /* left: -165px */
             top: 30px;
@@ -120,7 +120,7 @@
 
             position: absolute;
             /* 未展開 */
-            right:0;
+            right: 0;
             /* 展開 */
             /* right: -200px; */
             top: 60px;
@@ -132,12 +132,12 @@
 
             position: absolute;
             /* 未展開 */
-            left:0;
+            left: 0;
             /* 展開 */
             /* left: -255px */
- 
+
             top: 90px;
-            z-index: 99; 
+            z-index: 99;
         }
 
         .year2003 {
@@ -145,7 +145,7 @@
 
             position: absolute;
             /* 未展開 */
-            right:0;
+            right: 0;
             /* 展開 */
             /* right: -280px; */
 
@@ -178,11 +178,7 @@
                 <img class="year2002" src="2002.png" alt="">
                 <img class="year2003" src="2003.png" alt="">
             </div>
-
         </div>
-
-
-
         <div v-if="showBubble">
             <year1></year1>
             <year2></year2>
@@ -190,15 +186,14 @@
             <year4></year4>
             <year5></year5>
         </div>
-
-
     </div>
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"
         integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js">
+    </script>
 
     <script>
         // data-lax-opacity="300 0,200 0.3, 100 1"  
@@ -225,7 +220,6 @@
                 mounted: function () {
                     lax.addElement(this.$el) // add your element to lax when it mounts
                 },
-
             })
 
             Vue.component('year3', {
@@ -250,7 +244,6 @@
                 mounted: function () {
                     lax.addElement(this.$el) // add your element to lax when it mounts
                 },
-
             })
 
             Vue.component('year5', {
@@ -263,21 +256,17 @@
                 mounted: function () {
                     lax.addElement(this.$el) // add your element to lax when it mounts
                 },
-
             })
-
             var app = new Vue({
                 el: '#app',
                 data: {
                     showBubble: false
                 },
                 created() {
-
                     // setup lax
                     lax.setup()
-
                     document.addEventListener('scroll', function (x) {
-                        console.log(window.scrollY)
+                        // console.log(window.scrollY)
 
                         lax.update(window.scrollY)
                         if (scrollY > 400) {
@@ -287,50 +276,80 @@
                             $(img1).removeClass("active");
                             $(img1).addClass("none");
 
-                            var imgnext = document.querySelector(".box img:nth-child(" + posnext + ")");
+                            var imgnext = document.querySelector(".box img:nth-child(" + posnext +
+                                ")");
                             $(imgnext).removeClass("none");
                             $(imgnext).addClass("active");
-                            TweenLite.to( $('.year2003'), 1, {css:{'right':-280, display:'block'} ,ease:Power2.easeOut});
-                        }
-                        else if (scrollY > 350) {
+                            TweenLite.to($('.year2003'), 1, {
+                                css: {
+                                    'right': -280,
+                                    display: 'block'
+                                },
+                                ease: Power2.easeOut
+                            });
+                        } else if (scrollY > 350) {
                             var pos = 3;
                             var posnext = pos + 1;
                             var img1 = document.querySelector(".box img:nth-child(" + pos + ")");
                             $(img1).removeClass("active");
                             $(img1).addClass("none");
 
-                            var imgnext = document.querySelector(".box img:nth-child(" + posnext + ")");
+                            var imgnext = document.querySelector(".box img:nth-child(" + posnext +
+                                ")");
                             $(imgnext).removeClass("none");
                             $(imgnext).addClass("active");
-                            TweenLite.to( $('.year2002'), 1, {css:{'left':-255, display:'block'} ,ease:Power2.easeOut});
-                        }
-                        else if (scrollY > 300) {
+                            TweenLite.to($('.year2002'), 1, {
+                                css: {
+                                    'left': -255,
+                                    display: 'block'
+                                },
+                                ease: Power2.easeOut
+                            });
+                        } else if (scrollY > 300) {
                             var pos = 2;
                             var posnext = pos + 1;
                             var img1 = document.querySelector(".box img:nth-child(" + pos + ")");
                             $(img1).removeClass("active");
                             $(img1).addClass("none");
 
-                            var imgnext = document.querySelector(".box img:nth-child(" + posnext + ")");
+                            var imgnext = document.querySelector(".box img:nth-child(" + posnext +
+                                ")");
                             $(imgnext).removeClass("none");
                             $(imgnext).addClass("active");
-                            TweenLite.to( $('.year2000'), 1, {css:{'right':-200, display:'block'} ,ease:Power2.easeOut});
-                        }
-                        else if (scrollY > 250) {
+                            TweenLite.to($('.year2000'), 1, {
+                                css: {
+                                    'right': -200,
+                                    display: 'block'
+                                },
+                                ease: Power2.easeOut
+                            });
+                        } else if (scrollY > 250) {
                             var pos = 1;
                             var posnext = pos + 1;
                             var img1 = document.querySelector(".box img:nth-child(" + pos + ")");
                             $(img1).removeClass("active");
                             $(img1).addClass("none");
 
-                            var imgnext = document.querySelector(".box img:nth-child(" + posnext + ")");
+                            var imgnext = document.querySelector(".box img:nth-child(" + posnext +
+                                ")");
                             $(imgnext).removeClass("none");
                             $(imgnext).addClass("active");
-                            TweenLite.to( $('.year1997'), 1, {css:{'left':-165, display:'block'} ,ease:Power2.easeOut});
-                        }
-                        else if (scrollY > 200) {
-      
-                            TweenLite.to( $('.year1994'), 1, {css:{'right':-255 , display:'block'} ,ease:Power2.easeOut});
+                            TweenLite.to($('.year1997'), 1, {
+                                css: {
+                                    'left': -165,
+                                    display: 'block'
+                                },
+                                ease: Power2.easeOut
+                            });
+                        } else if (scrollY > 200) {
+
+                            TweenLite.to($('.year1994'), 1, {
+                                css: {
+                                    'right': -255,
+                                    display: 'block'
+                                },
+                                ease: Power2.easeOut
+                            });
                         }
 
                     }, false)
@@ -347,9 +366,6 @@
             // console.log(window.scrollY);
 
         }
-
-
-
     </script>
 </body>
 
