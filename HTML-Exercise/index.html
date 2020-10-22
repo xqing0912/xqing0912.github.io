@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>迪士尼系列公主</title>
+    <style>
+        * {
+            letter-spacing: 2px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .nav {
+            width: 100%;
+            height: 100px;
+            /* border: 1px solid red; */
+            background-color: #0B0E17;
+            z-index: 99;
+            position: relative;
+            /* position: fixed; */
+        }
+
+        .picture {
+            width: 100px;
+            height: 100px;
+            background-position: center;
+            background-size: cover;
+            float: left;
+            vertical-align: middle;
+        }
+
+        .item {
+            width: 40%;
+            position: absolute;
+            right: 0;
+            top: 20px;
+
+        }
+
+        li {
+            list-style: none;
+            display: inline-block;
+            margin: 10px 10px;
+            border: 1px solid white;
+            border-radius: 5px;
+            background-color: rgb(231, 160, 213);
+            cursor: pointer;
+            color: #eee;
+
+        }
+
+        li:hover {
+            background-color: rgb(159, 238, 238);
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        .full {
+            width: 100%;
+            height: 100vh;
+            background-image: url("img/pexels-photo-1925082.jpeg");
+            background-position: center;
+            /*  background-position: center，取背景的位置中心點出來*/
+            background-size: cover;
+            /* background-size: cover，取最長的邊對應位置出來 */
+
+            background-attachment: fixed;
+            /* background-attachment: fixed，圖片定住不動，視差背景  */
+            position: relative;
+        }
+
+        .title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 50px;
+            font-weight: bolder;
+            color: #fff;     
+
+        }
+
+        .title2 {
+            font-size: 18px;
+            color: #fff;
+            background-color: #333;
+            font-family: "微軟正黑體";
+        }
+
+        .elsa {
+            width: 100%;
+            height: 100vh;
+            background-image: url("img/191202-冰雪奇緣2.jpg");
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        .gotop {
+            /* width: 10%; */
+            border: 1px solid black;
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+            padding: 0 10px;
+            border-radius: 50%;
+            background-color: #eee;
+            z-index: 99;
+           
+        }
+
+        .gotop:hover {
+            background-color: coral;
+        }
+
+        .font {
+            color: cornflowerblue;
+            margin: 10px;
+            font-size: 40px;
+        }
+        .font:hover{
+            color: #eee
+        }
+
+        .longhair {
+            width: 100%;
+            height: 100vh;
+            background-image: url("img/changfa.jpg");
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        .snowwhite {
+            width: 100%;
+            height: 100vh;
+            background-image: url("img/baixue.jpg");
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        .buty {
+            width: 100%;
+            height: 100vh;
+            background-image: url("img/meinv.jpg");
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        .Mermaid {
+            width: 100%;
+            height: 100vh;
+            background-image: url("img/renyu.jpg");
+            background-position: top;
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        p {
+            margin: 0;
+            padding: 30px 120px;
+        }
+        @media screen and (max-width: 1080px) {
+            .item{
+                width: 52%;
+            }
+        }
+        @media screen and (max-width: 1280px) {
+            .item{
+                width: 45%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <img src="img/logo.jpg" id="top" class="picture">
+        <div class="item">
+            <ul>
+                <a href="#el">
+                    <li>冰雪公主</li>
+                </a>
+                <a href="#snow">
+                    <li>白雪公主</li>
+                </a>
+                <a href="#fish">
+                    <li>人魚公主</li>
+                </a>
+                <a href="#bu">
+                    <li>美女與野獸</li>
+                </a>
+                <a href="#long">
+                    <li>長髮公主</li>
+                </a>
+
+            </ul>
+        </div>
+    </div>
+    <div class="gotop">
+        <a href="#top" class="font">回頁首</a>
+    </div>
+    <div class="full">
+        <p class="title">迪士尼系列公主電影</p>
+    </div>
+    <p class="title2">
+        《冰雪奇緣2》於2019年11月7日在杜比劇院進行全球首映，並於2019年11月22日在美國院線上映。電影受到了影評人的普遍好評，稱讚其動畫、視覺、配樂及配音表現皆十分優異，批評處則集中在過於曲折的劇情。電影在全球收獲了14.5億美元的票房，並成為有史以來全球首映週末票房最高的動畫電影、女性導演開幕周最高票房和最高總票房、全球最高動畫電影票房第二名、2019年票房收入最高電影第三名和全球最高電影票房第十名。
+    </p>
+    <div id="el" class="elsa">
+        <p class="title">冰雪公主</p>
+
+    </div>
+    <p class="title2">《長髮姑娘》是AT分類法（Aarne-Thompson）第310種「塔中少女」（The Maiden in the
+        Tower）的寫作範例。故事包含許多童話故事常見的小場景，像是禁忌的果實、女性的花言巧語、苛刻的條件、被搶走的孩子、迷人的歌聲、看不見的監視者、王子的拯救以及治癒的淚水。安德魯·朗格出版的童話集也收錄了《長髮姑娘》</p>
+    <div id="long" class="longhair">
+        <p class="title">長髮公主</p>
+
+    </div>
+    <p class="title2">關於與「白雪公主」名稱相近或相同的條目，請見「白雪公主 (消歧義)」。
+        《白雪公主》（德語：Schneewittchen）是廣泛流行於歐洲的一篇德國童話，亦是該童話中的主角。其最著名的版本見於德國《格林童話》，講述了白雪公主受到繼母（格林童話最初手稿中為生母[1]）的虐待，逃到森林裡，遇到七個小矮人的故事。
+    </p>
+    <div id="snow" class="snowwhite">
+        <p class="title">白雪公主</p>
+
+    </div>
+    <p class="title2">《美女與野獸》（英語：Beauty and the
+        Beast）是一部於2017年上映的美國迪士尼公司的浪漫奇幻歌舞電影，由比爾·坎登執導，並與埃文·斯皮里奧托普洛斯和史蒂芬·切波斯基共同撰寫劇本[1]。華特迪士尼影業及曼德維爾影業聯合製作[1]，該片為1991年同名動畫電影的真人翻拍版，改編自珍妮-瑪麗·勒普蘭斯·德博蒙所創作的1756年童話故事，大部分內容均參照1991年的電影，但較1991年的電影增加不少情節。電影主演包括艾瑪·華森、丹·史蒂文斯、路克·伊凡斯、凱文·克萊、喬許·蓋德、伊旺·麥奎格、史丹利·圖奇、奧黛莉·麥唐娜、古古·瑪芭塔-勞、伊恩·麥克連和艾瑪·湯普遜。
+    </p>
+    <div id="bu" class="buty">
+        <p class="title">美女與野獸</p>
+
+    </div>
+    <p class="title2">《小美人魚》是丹麥作家安徒生的童話作品，描述一個年輕的美人魚為了愛情而放棄了在海中的生活，化身為人的故事。
+
+        此故事最初於1837年發表，後來啟發了諸多創作者將其改編，也對20世紀以後大眾文化中的人魚描述有十分重要的影響。</p>
+    <div id="fish" class="Mermaid">
+        <p class="title">人魚公主</p>
+    </div>
+</body>
+
+</html>
